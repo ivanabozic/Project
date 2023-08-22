@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DW-029\\Desktop\\project\\Project\\Infrastucture\\Infrastucture.csproj": {}
+    "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Infrastucture\\Infrastucture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DW-029\\Desktop\\project\\Project\\Infrastucture\\Infrastucture.csproj": {
+    "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Infrastucture\\Infrastucture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DW-029\\Desktop\\project\\Project\\Infrastucture\\Infrastucture.csproj",
+        "projectUniqueName": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Infrastucture\\Infrastucture.csproj",
         "projectName": "Infrastucture",
-        "projectPath": "C:\\Users\\DW-029\\Desktop\\project\\Project\\Infrastucture\\Infrastucture.csproj",
+        "projectPath": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Infrastucture\\Infrastucture.csproj",
         "packagesPath": "C:\\Users\\DW-029\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DW-029\\Desktop\\project\\Project\\Infrastucture\\obj\\",
+        "outputPath": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Infrastucture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DW-029\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,14 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Project.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : ApiControllerBase
     {
-        private ISender _mediator;
-
-        protected ISender Mediator => _mediator ??= HttpContext.RequestServices.GetService<ISender>();
-
         //[ApiExplorerSettings(GroupName = "users")]
         [HttpGet]
         [Route("getAll")]

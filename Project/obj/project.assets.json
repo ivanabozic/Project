@@ -366,11 +366,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DW-029\\Desktop\\project\\Project\\Project\\Project.csproj",
+      "projectUniqueName": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "C:\\Users\\DW-029\\Desktop\\project\\Project\\Project\\Project.csproj",
+      "projectPath": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Project\\Project.csproj",
       "packagesPath": "C:\\Users\\DW-029\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DW-029\\Desktop\\project\\Project\\Project\\obj\\",
+      "outputPath": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DW-029\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -388,8 +388,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\DW-029\\Desktop\\project\\Project\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\DW-029\\Desktop\\project\\Project\\Application\\Application.csproj"
+            "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Application\\Application.csproj"
             }
           }
         }
