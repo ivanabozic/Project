@@ -16,13 +16,13 @@ namespace Application.Hotels.Query.GetHotel
 
     public class GetHotelQueryHandler : IRequestHandler<GetHotelQuery, Hotel>
     {
-        public async Task<Hotel?> Handle(GetHotelQuery query, CancellationToken cancellationToken)
+        public async Task<Hotel> Handle(GetHotelQuery query, CancellationToken cancellationToken)
         {
             try
             {
                 var hotels = GetHotels();
 
-                var hotel = hotels.Find(x => x.Id == query.Id);
+                var hotel = hotels.Find(x => x.Id.ToString() == query.Id);
 
                 return hotel; 
             }catch(Exception ex)
@@ -38,65 +38,65 @@ namespace Application.Hotels.Query.GetHotel
 
             hotels.Add(new Hotel
             {
-                Id = "1",
+                Id = Guid.Parse("1"),
                 Name = "Splendid",
                 NumberStar = 5,
                 RoomNumber = 5,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "6",
+                    Id = Guid.Parse("6"),
                     Name = "Montenegro"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "2",
+                Id = Guid.Parse("2"),
                 Name = "Rajski vrt",
                 NumberStar = 4,
                 RoomNumber = 8,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "7",
+                    Id = Guid.Parse("7"),
                     Name = "Bosnia"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "3",
+                Id = Guid.Parse("3"),    
                 Name = "Seraton",
                 NumberStar = 5,
                 RoomNumber = 8,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "8",
+                    Id = Guid.Parse("8"),
                     Name = "Serbia"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "4",
+                Id = Guid.Parse("4"),
                 Name = "Hajat",
                 NumberStar = 5,
                 RoomNumber = 5,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "8",
+                    Id = Guid.Parse("8"),
                     Name = "Serbia"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "5",
+                Id = Guid.Parse("5"),
                 Name = "Interkontinental",
                 NumberStar = 5,
                 RoomNumber = 7,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "8",
+                    Id = Guid.Parse("8"),
                     Name = "Serbia"
                 },
             });

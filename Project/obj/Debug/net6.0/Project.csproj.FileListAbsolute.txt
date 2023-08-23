@@ -74,3 +74,16 @@ C:\Users\DW-029\Desktop\Project-backend\Project\Project\obj\Debug\net6.0\Project
 C:\Users\DW-029\Desktop\Project-backend\Project\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
 C:\Users\DW-029\Desktop\Project-backend\Project\Project\obj\Debug\net6.0\ref\Project.dll
 C:\Users\DW-029\Desktop\Project-backend\Project\Project\obj\Debug\net6.0\Project.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\EFCore.NamingConventions.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\DW-029\Desktop\Project-backend\Project\Project\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

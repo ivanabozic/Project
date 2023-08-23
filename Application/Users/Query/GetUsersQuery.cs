@@ -40,7 +40,7 @@ namespace Application.Users.Query
             users.Add(
                 new User
                 {
-                    Id = "1",
+                    Id = Guid.Parse("1"),
                     Name = "Petar",
                     Lastname = "Petrovic",
                     Username = "petar001",
@@ -50,7 +50,7 @@ namespace Application.Users.Query
 
             users.Add(new User
             {
-                Id = "2",
+                Id = Guid.Parse("2"),
                 Name = "Marko",
                 Lastname = "Markovic",
                 Username = "marko001",
@@ -59,7 +59,7 @@ namespace Application.Users.Query
 
             users.Add(new User
             {
-                Id = "3",
+                Id = Guid.Parse("3"),
                 Name = "Ana",
                 Lastname = "Anic",
                 Username = "ana001",
@@ -68,7 +68,7 @@ namespace Application.Users.Query
 
             users.Add(new User
             {
-                Id = "4",
+                Id = Guid.Parse("4"),
                 Name = "Nikolina",
                 Lastname = "Nikolic",
                 Username = "nikolina001",
@@ -77,7 +77,7 @@ namespace Application.Users.Query
 
             users.Add(new User
             {
-                Id = "5",
+                Id = Guid.Parse("5"),
                 Name = "Nemanja",
                 Lastname = "Maric",
                 Username = "nemanja001",

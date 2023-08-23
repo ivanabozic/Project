@@ -28,7 +28,7 @@ namespace Application.Recommendation.Commands
                 if (!string.IsNullOrEmpty(command.Id))
                     recommendations = recommendations.Where(x => x.Id == command.Id).ToList();
                 if (!string.IsNullOrEmpty(command.Destination))
-                    recommendations = recommendations.Where(x => x.Destination.Name.ToLower().Contains(command.Destination.ToLower())).ToList();
+                    recommendations = recommendations.Where(x => x.Town.Name.ToLower().Contains(command.Destination.ToLower())).ToList();
                 if (command.Price != null)
                     recommendations = recommendations.Where(x => x.Price == command.Price).ToList();
 
@@ -51,9 +51,10 @@ namespace Application.Recommendation.Commands
                 new Infrastucture.Models.Recommendation
                 {
                     Id = "1",
-                    Destination = new Country
+             
+                    Town = new Town
                     {
-                        Id = "5",
+                        Id = Guid.Parse("5"),
                         Name = "Portugal"
                     },
                     Price = 35000,
@@ -65,9 +66,9 @@ namespace Application.Recommendation.Commands
                 new Infrastucture.Models.Recommendation
                 {
                     Id = "2",
-                    Destination = new Country
+                    Town = new Town
                     {
-                        Id = "3",
+                        Id = Guid.Parse("3"),
                         Name = "Turkey"
                     },
                     Price = 55000,
@@ -79,9 +80,9 @@ namespace Application.Recommendation.Commands
                 new Infrastucture.Models.Recommendation
                 {
                     Id = "3",
-                    Destination = new Country
+                    Town = new Town
                     {
-                        Id = "2",
+                        Id = Guid.Parse("2"),
                         Name = "Spain"
                     },
                     Price = 65000,

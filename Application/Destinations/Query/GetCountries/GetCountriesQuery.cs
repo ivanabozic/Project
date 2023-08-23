@@ -36,49 +36,49 @@ namespace Application.Destinations.Query.GetCountries
             countries.Add(
                 new Country
                 {
-                    Id = "1",
+                    Id = Guid.Parse("1"),
                     Name = "France"
                 });
 
 
             countries.Add(new Country
             {
-                Id = "2",
+                Id = Guid.Parse("2"),
                 Name = "Spain",
             });
 
             countries.Add(new Country
             {
-                Id = "3",
+                Id = Guid.Parse("3"),
                 Name = "Turkey",
 
             });
 
             countries.Add(new Country
             {
-                Id = "4",
+                Id = Guid.Parse("4"),
                 Name = "Germany",
             });
 
             countries.Add(new Country
             {
-                Id = "5",
+                Id = Guid.Parse("5"),
                 Name = "Portugal",
             });
 
             countries.Add(new Country
             {
-                Id = "6",
+                Id = Guid.Parse("6"),
                 Name = "Montenegro",
             });
             countries.Add(new Country
             {
-                Id = "7",
+                Id = Guid.Parse("7"),
                 Name = "Bosia",
             });
             countries.Add(new Country
             {
-                Id = "8",
+                Id = Guid.Parse("8"),
                 Name = "Serbia",
             });
 

@@ -8,8 +8,9 @@ namespace Infrastucture.Models
 {
     public class Country
     {
-        public string? Id { get; set; }
+        public Guid Id { get; set; }
         public string? Name { get; set; }
-       
+        public string? Capital { get; set; }
+        public virtual ICollection<Town>? Towns { get; set; }
     }
 }

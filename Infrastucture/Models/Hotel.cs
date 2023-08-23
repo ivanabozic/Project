@@ -8,10 +8,11 @@ namespace Infrastucture.Models
 {
     public class Hotel
     {
-        public string Id { get; set; }
-        public string Name { get; set; }
+        public Guid Id { get; set; }
+        public string? Name { get; set; }
         public int NumberStar { get; set; }
-        public Country Destination { get; set; }
         public int RoomNumber { get; set; }
+        public Guid? TownId { get; set; }
+        public virtual Town? Town { get; set; }
     }
 }

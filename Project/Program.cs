@@ -2,14 +2,15 @@
 
 
 using Application;
+using Infrastucture;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 
 builder.Services.AddControllers();
 
@@ -24,7 +25,18 @@ builder.Services.AddCors(policyBuilder =>
 
 IServiceCollection service = builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
+var env = Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT");
+
+
+var configuration = new ConfigurationBuilder()
+      .SetBasePath(Directory.GetCurrentDirectory())
+      .AddJsonFile($"appsettings.json", optional: true, reloadOnChange: true)
+      .Build();
+
+var my = configuration.GetConnectionString("DefaultConnection");
+
 service.AddApplication();
+service.AddInfrastructure(configuration);
 service.AddCors();
 var app = builder.Build();
 

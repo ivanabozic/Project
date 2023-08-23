@@ -104,6 +104,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "EFCore.NamingConventions": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -151,6 +161,9 @@
             "projectReferences": {
               "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Application\\Application.csproj"
+              },
+              "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Infrastucture\\Infrastucture.csproj": {
+                "projectPath": "C:\\Users\\DW-029\\Desktop\\Project-backend\\Project\\Infrastucture\\Infrastucture.csproj"
               }
             }
           }

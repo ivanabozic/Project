@@ -28,11 +28,11 @@ namespace Application.Hotels.Commands.FilterHotels
 
 
                 if (!string.IsNullOrEmpty(command.Id))
-                    hotels = hotels.Where(x => x.Id == command.Id).ToList();
+                    hotels = hotels.Where(x => x.Id.ToString() == command.Id).ToList();
                 if (!string.IsNullOrEmpty(command.Name))
                     hotels = hotels.Where(x => x.Name.ToLower().Contains(command.Name.ToLower())).ToList();
                 if (!string.IsNullOrEmpty(command.Destination))
-                    hotels = hotels.Where(x => x.Destination.Name.ToLower().Contains(command.Destination.ToLower())).ToList();
+                    hotels = hotels.Where(x => x.Town.Name.ToLower().Contains(command.Destination.ToLower())).ToList();
                 if (command.RoomNumber.HasValue && command.RoomNumber > 0)
                     hotels = hotels.Where(x => x.RoomNumber == command.RoomNumber).ToList();
                 if (command.NumberStar.HasValue && command.NumberStar > 0) 
@@ -56,65 +56,65 @@ namespace Application.Hotels.Commands.FilterHotels
 
             hotels.Add(new Hotel
             {
-                Id = "1",
+                Id = Guid.Parse("1"),
                 Name = "Splendid",
                 NumberStar = 5,
                 RoomNumber = 5,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "6",
+                    Id = Guid.Parse("6"),
                     Name = "Montenegro"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "2",
+                Id = Guid.Parse("2"),
                 Name = "Rajski vrt",
                 NumberStar = 4,
                 RoomNumber = 8,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "7",
+                    Id = Guid.Parse("7"),
                     Name = "Bosnia"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "3",
+                Id = Guid.Parse("3"),
                 Name = "Seraton",
                 NumberStar = 5,
                 RoomNumber = 8,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "8",
+                    Id = Guid.Parse("8"),
                     Name = "Serbia"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "4",
+                Id = Guid.Parse("4"),
                 Name = "Hajat",
                 NumberStar = 5,
                 RoomNumber = 5,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "8",
+                    Id = Guid.Parse("8"),
                     Name = "Serbia"
                 },
             });
 
             hotels.Add(new Hotel
             {
-                Id = "5",
+                Id = Guid.Parse("5"),
                 Name = "Interkontinental",
                 NumberStar = 5,
                 RoomNumber = 7,
-                Destination = new Country
+                Town = new Town
                 {
-                    Id = "8",
+                    Id = Guid.Parse("8"),
                     Name = "Serbia"
                 },
             });

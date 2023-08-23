@@ -44,7 +44,7 @@ namespace Application.Reservations.Query.GetReservation
                 Email = "ivana.bozic01@gmail.com",
                 Destination = new Country
                 {
-                    Id = "1",
+                    Id = Guid.Parse("1"),
                     Name = "France"
                 },
                 DateFrom = DateTime.Parse("2019-06-11 14:40:52"),
@@ -59,7 +59,7 @@ namespace Application.Reservations.Query.GetReservation
                 Email = "marko.markovic01@gmail.com",
                 Destination = new Country
                 {
-                    Id = "5",
+                    Id = Guid.Parse("5"),
                     Name = "Portugal"
                 },
                 DateFrom = DateTime.Parse("2020-03-11 14:40:52"),
@@ -74,7 +74,7 @@ namespace Application.Reservations.Query.GetReservation
                 Email = "petar.petrovic@gmail.com",
                 Destination = new Country
                 {
-                    Id = "3",
+                    Id = Guid.Parse("3"),
                     Name = "Turkey"
                 },
                 DateFrom = DateTime.Parse("2020-04-11 14:40:52"),
@@ -90,7 +90,7 @@ namespace Application.Reservations.Query.GetReservation
                 Name = "reservation 4",
                 Destination = new Country
                 {
-                    Id = "3",
+                    Id = Guid.Parse("3"),
                     Name = "Turkey"
                 },
                 DateFrom = DateTime.Parse("2020-04-11 14:40:52"),
@@ -105,7 +105,7 @@ namespace Application.Reservations.Query.GetReservation
                 Name = "reservation 5",
                 Destination = new Country
                 {
-                    Id = "3",
+                    Id = Guid.Parse("3"),
                     Name = "Turkey"
                 },
                 DateFrom = DateTime.Parse("2020-04-11 14:40:52"),

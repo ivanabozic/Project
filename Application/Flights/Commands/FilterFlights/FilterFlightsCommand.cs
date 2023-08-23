@@ -57,12 +57,12 @@ namespace Application.Flights.Commands.FilterFlights
                     Id = "1",
                     Origin = new Country
                     {
-                        Id = "1",
+                        Id = Guid.Parse("1"),
                         Name = "France"
                     },
                     Destination = new Country
                     {
-                        Id = "3",
+                        Id = Guid.Parse("3"),
                         Name = "Turkey"
                     },
                     Departure = DateTime.Parse("2019-05-08 14:40:52"),
@@ -77,12 +77,12 @@ namespace Application.Flights.Commands.FilterFlights
                     Id = "2",
                     Origin = new Country
                     {
-                        Id = "3",
+                        Id = Guid.Parse("3"),
                         Name = "Turkey"
                     },
                     Destination = new Country
                     {
-                        Id = "5",
+                        Id = Guid.Parse("5"),
                         Name = "Portugal"
                     },
                     Departure = DateTime.Parse("2019-05-10 11:40:52"),
@@ -97,12 +97,12 @@ namespace Application.Flights.Commands.FilterFlights
                     Id = "3",
                     Origin = new Country
                     {
-                        Id = "1",
+                        Id = Guid.Parse("1"),
                         Name = "France"
                     },
                     Destination = new Country
                     {
-                        Id = "5",
+                        Id = Guid.Parse("5"),
                         Name = "Portugal"
                     },
                     Departure = DateTime.Parse("2019-05-15 11:40:52"),
@@ -117,12 +117,12 @@ namespace Application.Flights.Commands.FilterFlights
                     Id = "4",
                     Origin = new Country
                     {
-                        Id = "5",
+                        Id = Guid.Parse("5"),
                         Name = "Portugal"
                     },
                     Destination = new Country
                     {
-                        Id = "1",
+                        Id = Guid.Parse("1"),
                         Name = "France"
                     },
                     Departure = DateTime.Parse("2019-05-12 11:40:52"),

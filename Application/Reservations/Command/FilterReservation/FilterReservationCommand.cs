@@ -36,7 +36,7 @@ namespace Application.Reservations.Command.FilterReservation
                 if (!string.IsNullOrEmpty(command.Email))
                     reservations = reservations.Where(x => x.Email.ToLower().Contains(command.Email.ToLower())).ToList();
                 if (!string.IsNullOrEmpty(command.Destination))
-                    reservations = reservations.Where(x => x.Destination.Id.ToLower().Contains(command.Destination.ToLower())).ToList();
+                    reservations = reservations.Where(x => x.Destination.Id.ToString().ToLower().Contains(command.Destination.ToLower())).ToList();
                 if (command.Price.HasValue && command.Price > 0)
                     reservations = reservations.Where(x => x.Price == command.Price).ToList();
                 if(command.DateFrom.HasValue)
@@ -68,7 +68,7 @@ namespace Application.Reservations.Command.FilterReservation
                 Name = "reservation 1",
                 Destination = new Country
                 {
-                    Id = "1",
+                    Id = Guid.Parse("1"),
                     Name = "France"
                 },
                 DateFrom = DateTime.Parse("2019-06-11 14:40:52"),
@@ -83,7 +83,7 @@ namespace Application.Reservations.Command.FilterReservation
                 Email = "marko.markovic01@gmail.com",
                 Destination = new Country
                 {
-                    Id = "5",
+                    Id = Guid.Parse("5"),
                     Name = "Portugal"
                 },
                 DateFrom = DateTime.Parse("2020-03-11 14:40:52"),
@@ -98,7 +98,7 @@ namespace Application.Reservations.Command.FilterReservation
                 Name= "reservation 3",
                 Destination = new Country
                 {
-                    Id = "3",
+                    Id = Guid.Parse("3"),
                     Name = "Turkey"
                 },
                 DateFrom = DateTime.Parse("2020-04-11 14:40:52"),
@@ -113,7 +113,7 @@ namespace Application.Reservations.Command.FilterReservation
                 Name = "reservation 4",
                 Destination = new Country
                 {
-                    Id = "3",
+                    Id = Guid.Parse("3"),
                     Name = "Turkey"
                 },
                 DateFrom = DateTime.Parse("2020-04-11 14:40:52"),
@@ -128,7 +128,7 @@ namespace Application.Reservations.Command.FilterReservation
                 Name = "reservation 5",
                 Destination = new Country
                 {
-                    Id = "3",
+                    Id = Guid.Parse("3"),
                     Name = "Turkey"
                 },
                 DateFrom = DateTime.Parse("2020-04-11 14:40:52"),
